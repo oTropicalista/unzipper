@@ -35,3 +35,14 @@ pub fn zipar(fname: &str) -> zip::result::ZipResult<()> {
 
     Ok(())
 }
+
+//funcao para tratar o diretorio para zipar
+//pegar o metodo para zipar
+pub fn tratar_dir(x: &str, y: &str) {
+
+    
+}
+
+pub fn zipar_dir(src: &str, dst: &str) -> zip::result::ZipResult<()> {
+    //code
+}

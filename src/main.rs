@@ -18,6 +18,11 @@ fn main() {
             Ok(_) => println!("Zipado para {}", args[2]),
             Err(e) => println!("Erro: {:?}", e),
         }
+    } else if args[1] == "-zp"{
+        match acao::tratar_dir(args[2], args[3]) {
+            Ok(_) => println!("Zipado para {}", args[3]),
+            Err(e) => println!( "Erro: {:?}", e),
+        }
     } else {
         println!("Ate o momento apenas extraimos arquivos. Agradecemos pela compreensao.");
         return;
